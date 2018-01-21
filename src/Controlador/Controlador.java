@@ -12,5 +12,18 @@ import Modelo.*;
  * @author User
  */
 public class Controlador {
-    
-}
+    private Tienda tienda;
+
+    public Tienda getTienda() {
+        return tienda;
+    }
+
+    public void setTienda(Tienda tienda) {
+        this.tienda = tienda;
+    }
+
+    public Controlador() {
+        this.tienda = new Tienda("Claro Facatativa");
+    }
+
+    }

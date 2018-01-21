@@ -12,6 +12,10 @@ package Modelo;
 class Marca {
 private String marca;
 
+    public Marca(String marca) {
+        this.marca = marca;
+    }
+
     public String getMarca() {
         return marca;
     }

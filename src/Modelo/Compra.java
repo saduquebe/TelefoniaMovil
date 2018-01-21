@@ -5,10 +5,16 @@
  */
 package Modelo;
 
+import java.util.Date;
+
 /**
  *
  * @author User
  */
 public class Compra extends Factura{
-    
+
+    public Compra(double numero, int dia, int mes, int anio) {
+        super(numero, dia, mes, anio);
+    }
+
 }

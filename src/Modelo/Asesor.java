@@ -13,6 +13,11 @@ class Asesor {
    private String nombre;
    private double comision;
 
+    public Asesor(String nombre, double comision) {
+        this.nombre = nombre;
+        this.comision = comision;
+    }
+
     public String getNombre() {
         return nombre;
     }

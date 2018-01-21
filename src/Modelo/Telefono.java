@@ -16,6 +16,14 @@ public class Telefono {
     private int email;
     private Marca marca;
 
+    public Telefono(double valorCompra, double valorVenta, String referencia, int email, Marca marca) {
+        this.valorCompra = valorCompra;
+        this.valorVenta = valorVenta;
+        this.referencia = referencia;
+        this.email = email;
+        this.marca = marca;
+    }
+
     public double getValorCompra() {
         return valorCompra;
     }

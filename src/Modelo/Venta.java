@@ -5,6 +5,7 @@
  */
 package Modelo;
 
+import java.util.ArrayList;
 import java.util.Date;
 
 /**
@@ -14,6 +15,12 @@ import java.util.Date;
 public class Venta extends Factura{
     private Asesor asesor;
 
+    public Venta(Asesor asesor, double numero, int dia, int mes, int anio) {
+        super(numero, dia, mes, anio);
+        this.asesor = asesor;
+    }
+
+    
     public Asesor getAsesor() {
         return asesor;
     }
@@ -22,20 +29,47 @@ public class Venta extends Factura{
         this.asesor = asesor;
     }
 
-    public long getNumero() {
+    public double getNumero() {
         return numero;
     }
 
-    public void setNumero(long numero) {
+    public void setNumero(double numero) {
         this.numero = numero;
     }
 
-    public Date getFecha() {
-        return fecha;
+    public int getDia() {
+        return dia;
     }
 
-    public void setFecha(Date fecha) {
-        this.fecha = fecha;
+    public void setDia(int dia) {
+        this.dia = dia;
     }
+
+    public int getMes() {
+        return mes;
+    }
+
+    public void setMes(int mes) {
+        this.mes = mes;
+    }
+
+    public int getAnio() {
+        return anio;
+    }
+
+    public void setAnio(int anio) {
+        this.anio = anio;
+    }
+
+    public ArrayList<Telefono> getTelefonos() {
+        return telefonos;
+    }
+
+    public void setTelefonos(ArrayList<Telefono> telefonos) {
+        this.telefonos = telefonos;
+    }
+
+
+
 
 }

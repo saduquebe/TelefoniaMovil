@@ -15,8 +15,18 @@ public class Tienda {
     private String nombre;
     private ArrayList<Factura> facturas;
     private ArrayList<Cliente> clientes; 
+    private ArrayList<Asesor> asesores;
     private double utilidad;
 
+    public Tienda(String nombre) {
+        this.nombre = nombre;
+        this.utilidad =0;
+        this.facturas = new ArrayList<>();
+        this.clientes = new ArrayList<>();
+        this.asesores = new ArrayList<>();
+    }
+
+    
     public String getNombre() {
         return nombre;
     }
@@ -48,5 +58,9 @@ public class Tienda {
     public void setUtilidad(double utilidad) {
         this.utilidad = utilidad;
     }
-    
+    public void addFacturacompra(double numero,int dia,int mes,int anio){
+        Factura factura= new Compra(numero,dia,mes,anio);
+        this.facturas.add(factura);
+       
+    }
 }
